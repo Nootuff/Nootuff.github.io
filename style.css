@@ -139,6 +139,13 @@ background: url("https://raw.githubusercontent.com/Nootuff/Storage/master/Portfo
 .proficiency-list {
   font-size: 23px;
   list-style-type: none;
+  text-align: center;
+}
+
+.proficiency-table{
+  margin: auto;
+  font-size: 25px;
+  border-spacing: 25px 0px;
 }
 
 #projects {
