@@ -100,7 +100,7 @@ nav {
   -moz-transition: 0.7s ease-in-out;
 }
 
-.fab:hover {
+.linkIcon:hover {
   transform: rotateY(360deg);
   background-color: var(--blue-color);
   color: var(--white-color);
