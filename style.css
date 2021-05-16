@@ -11,7 +11,7 @@ body {
 
 :root {
   --blue-color: #448bfc;
-  --dark-grey-color: #1D1E22;
+  --dark-grey-color: #1d1e22;
   --white-color: #ffffff;
 }
 
@@ -20,11 +20,11 @@ a {
 }
 
 .dark-grey-background {
-   background-color: var(--dark-grey-color);
+  background-color: var(--dark-grey-color);
 }
 
 .white-text {
-   color: var(--white-color);
+  color: var(--white-color);
 }
 
 nav {
@@ -36,6 +36,8 @@ nav {
   z-index: 10;
 }
 
+
+
 .navlink {
   color: #d4d4d4;
   float: right;
@@ -43,7 +45,7 @@ nav {
   font-size: 20px;
   transition: 0.4s ease-in-out;
   -webkit-transition: 0.4s ease-in-out;
-	-moz-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
 }
 
 .navlink:hover {
@@ -51,8 +53,8 @@ nav {
 }
 
 #welcome-section {
-background: url("https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/code-2.jpg") 
-  no-repeat center fixed;
+  background: url("https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/code-2.jpg")
+    no-repeat center fixed;
   height: 100vh;
   background-size: cover;
   position: relative;
@@ -73,22 +75,21 @@ background: url("https://raw.githubusercontent.com/Nootuff/Storage/master/Portfo
 }
 
 .icon-container {
-  margin: 10px; 
+  margin: 10px;
   border: 5px solid var(--white-color);
   border-radius: 50%;
   background-color: var(--white-color);
 }
 
-
 #icons .icon-container {
   display: inline-block;
   transition: 0.7s ease-in-out;
   -webkit-transition: 0.7s ease-in-out;
-	-moz-transition: 0.7s ease-in-out;
+  -moz-transition: 0.7s ease-in-out;
   margin-bottom: 30px;
 }
 
-.fab {
+.linkIcon {
   background-color: var(--white-color);
   color: var(--dark-grey-color);
   padding: 12px;
@@ -96,7 +97,7 @@ background: url("https://raw.githubusercontent.com/Nootuff/Storage/master/Portfo
   border-radius: 50%;
   transition: 0.7s ease-in-out;
   -webkit-transition: 0.7s ease-in-out;
-	-moz-transition: 0.7s ease-in-out;
+  -moz-transition: 0.7s ease-in-out;
 }
 
 .fab:hover {
@@ -142,8 +143,9 @@ background: url("https://raw.githubusercontent.com/Nootuff/Storage/master/Portfo
   text-align: center;
 }
 
-.proficiency-table{
+.proficiency-table {
   margin: auto;
+  padding: auto;
   font-size: 25px;
   border-spacing: 25px 0px;
 }
@@ -199,12 +201,12 @@ background: url("https://raw.githubusercontent.com/Nootuff/Storage/master/Portfo
 }
 
 .project-tile:hover .caption {
-   padding-right: 10px;
-}  
+  padding-right: 10px;
+}
 
 .project-tile:hover .pointers {
-   opacity: 1;
-   padding-left: 10px;
+  opacity: 1;
+  padding-left: 10px;
 }
 
 #link-container {
@@ -216,7 +218,11 @@ background: url("https://raw.githubusercontent.com/Nootuff/Storage/master/Portfo
   box-sizing: border-box;
   border: 3px solid var(--dark-grey-color);
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom,  var(--white-color) 50%, var(--blue-color) 50%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--white-color) 50%,
+    var(--blue-color) 50%
+  );
   transition: 0.5s ease-in-out;
   -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
@@ -224,8 +230,8 @@ background: url("https://raw.githubusercontent.com/Nootuff/Storage/master/Portfo
 }
 
 #link-container:hover {
-   background-position: 0% 100%;
-   color: var(--white-color);  
+  background-position: 0% 100%;
+  color: var(--white-color);
 }
 
 #contact {
@@ -241,7 +247,8 @@ form {
   text-align: left;
 }
 
-input, textarea {
+input,
+textarea {
   font-family: Nunito;
   width: 100%;
   background-color: #1b2833;
@@ -262,7 +269,11 @@ textarea {
 #submit {
   background-size: 100% 200%;
   border-radius: 0px;
-  background-image: linear-gradient(to bottom, var(--white-color) 50%, var(--blue-color) 50%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--white-color) 50%,
+    var(--blue-color) 50%
+  );
   transition: 0.5s ease-in-out;
   width: 60%;
   height: 50px;
@@ -290,17 +301,16 @@ footer p {
 }
 
 /* smaller screen */
-@media only screen and (max-width: 1000px) { 
-  
+@media only screen and (max-width: 1000px) {
   #welcome-section {
     height: auto;
   }
-  
+
   #grid {
     grid-template-columns: 1fr;
     padding: 30px 30px 30%;
   }
-  
+
   .heading {
     font-size: 30px;
     width: 90%;
@@ -308,7 +318,12 @@ footer p {
 }
 
 /* tablet */
-@media only screen and (max-width: 800px) {  
+@media only screen and (max-width: 800px) {
+  .proficiency-table {
+  font-size: 18px;  
+    width: 100%; 
+  }
+  
   .pointers {
     opacity: 1;
   }
@@ -316,17 +331,20 @@ footer p {
 
 /* phone vertical */
 @media only screen and (max-width: 450px) {
-    
-.icon-container {
-  margin: 3px; 
+  #about-container {
+    width: 95%;
   }
-  
+
+  .icon-container {
+    margin: 3px;
+  }
+
   #grid {
     grid-template-columns: 1fr;
     width: 100%;
     padding: 0px 0px 45%;
   }
-  
+
   .caption {
     font-size: 20px;
     padding-top: 20px;
