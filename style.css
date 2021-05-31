@@ -10,6 +10,8 @@ body {
 }
 
 :root {
+  --light-blue-color: #a0c4fd;
+  --dark-blue-color: #002a6d;
   --blue-color: #448bfc;
   --dark-grey-color: #1d1e22;
   --white-color: #ffffff;
@@ -36,9 +38,8 @@ nav {
   z-index: 10;
 }
 
-
-
 .navlink {
+  opacity: 0;
   color: #d4d4d4;
   float: right;
   padding: 10px 15px;
@@ -46,6 +47,7 @@ nav {
   transition: 0.4s ease-in-out;
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
+  
 }
 
 .navlink:hover {
@@ -53,28 +55,88 @@ nav {
 }
 
 #welcome-section {
+  /*
   background: url("https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/code-2.jpg")
     no-repeat center fixed;
-  height: 100vh;
+  
   background-size: cover;
   position: relative;
+*/
+  height: 100vh;
   text-align: center;
 }
 
-#hello {
+.bg {
+  animation:bgSlide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, var(--dark-grey-color) 50%, var(--dark-blue-color) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+@keyframes bgSlide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+#intro{
   padding-top: 9vw;
   font-size: 3em;
 }
 
+#hello {
+  position: relative;
+  color: transparent;
+  white-space : nowrap;
+  text-align: left;
+}
+
+#hello::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0; 
+  width: 0;
+  height: 100%;
+  color: var(--white-color);
+  /*-webkit-text-stroke: 1px; black;*/
+  overflow: hidden;
+  animation: textWipe 1.5s forwards;
+  }
+  
+
 #adam {
-  color: var(--blue-color);
+  color: transparent;
+  animation: glow 1.5s forwards;
+  animation-delay: 0.7s;
+  animation-direction: alternate;
 }
 
 #sub-heading {
+  opacity: 0;
   margin-top: -25px;
 }
 
+
 .icon-container {
+  opacity: 0;
   margin: 10px;
   border: 5px solid var(--white-color);
   border-radius: 50%;
@@ -108,6 +170,85 @@ nav {
 
 .icon-containter:hover {
   background-color: var(--blue-color);
+}
+
+/*
+#linkedin{
+  animation: fadeIn 2s;
+}
+
+#codepen{
+  animation: fadeIn 3s;
+}
+
+#github{
+  animation: fadeIn 4s;
+}
+
+#twitter{
+  animation: fadeIn 5s;
+}
+*/
+@keyframes textWipe {
+  0%{
+    opacity: 0;
+    width: 0;
+  }
+  70%{
+    opacity: 1;
+    width: 100%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+@keyframes glow{
+  0%{text-shadow:0px 0px 1px var(--light-blue-color),0px 0px 0.5px var(--white-color);
+    color: transparent}
+  35%{text-shadow:0px 0px 20px var(--light-blue-color),0px 0px 20px var(--white-color);}
+  70%{text-shadow:0px 0px 1px var(--light-blue-color),0px 0px 0.5px var(--white-color);
+    color: var(--blue-color);
+  }
+  100%{
+    color: var(--blue-color);
+  }
+}
+
+.fadeAnim{
+  animation: fadeIn 4s forwards;
+}
+
+@keyframes fadeIn{
+  0%{
+opacity: 0;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    transform:translatey(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    transform:translatey(0);
+    opacity: 1;
+  }
 }
 
 .heading {
