@@ -10,21 +10,24 @@
 
 <body>
   <nav id="navbar" class="dark-grey-background ">
-    <a class="navlink" href="#contact">Contact</a>
-    <a class="navlink" href="#projects">Work</a>
-    <a class="navlink" href="#about">About</a>
+    <a class="navlink fadeTarget" href="#contact">Contact</a>
+    <a class="navlink fadeTarget" href="#projects">Work</a>
+    <a class="navlink fadeTarget" href="#about">About</a>
   </nav>
   <section id="welcome-section">
-    <h1 id="hello" class="white-text">Hello my name is: <span id="adam">Adam Walker</span></h1>
-    <h2 id="sub-heading" class="white-text">Aspiring web developer and freeCodeCamp student.</h2>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <h1 id="intro" class="white-text"><span id="hello" data-text="Hello my name is">Hello my name is:</span><span id="adam">Adam Walker</span></h1>
+    <h2 id="sub-heading" class="white-text fadeTarget">Aspiring web developer and freeCodeCamp student.</h2>
     <div id="icons">
-      <div class="icon-container">
+      <div id="linkedin" class="icon-container fadeTarget">
         <a href="https://www.linkedin.com/in/adamwalkeruk/" target="_blank" class="linkIcon fab fa-linkedin-in"></a></div>
-      <div class="icon-container">
+      <div id="codepen" class="icon-container fadeTarget">
         <a href="https://codepen.io/nootuff" target="_blank" class="linkIcon fab fa-codepen"></a></div>
-      <div class="icon-container">
+      <div id="github" class="icon-container fadeTarget">
         <a href="https://github.com/Nootuff" target="_blank" class="linkIcon fab fa-github"></a></div>
-      <div class="icon-container">
+      <div id="twitter" class="icon-container fadeTarget">
         <a href="https://twitter.com/AdamJonWalker" target="_blank" class="linkIcon fab fa-twitter"></a></div>
     </div>
   </section>
@@ -119,5 +122,7 @@
   <footer class="white-text">
     <p> &copy; Adam Walker 2020 </p>
   </footer>
+  <script type="text/javascript" src="funcs.js"></script>
 </body>
 </html>
+
