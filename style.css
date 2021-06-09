@@ -137,9 +137,11 @@ nav {
   }
   
 #adam {
-  color: transparent;
+
   position:relative;
   z-index:0;
+  opacity: 0;
+  color: var(--blue-color);
 }
 
 #sub-heading {
@@ -204,12 +206,12 @@ nav {
 
 @keyframes glow{
   0%{text-shadow:0px 0px 1px var(--light-blue-color),0px 0px 0.5px var(--white-color);
-    color: transparent}
+   opacity: 0}
   35%{text-shadow:0px 0px 20px var(--light-blue-color),0px 0px 20px var(--white-color);}
   70%{text-shadow:0px 0px 1px var(--light-blue-color),0px 0px 0.5px var(--white-color);
     color: var(--blue-color);
   }
-  100%{color: var(--blue-color);}
+  100%{opacity:1;}
 }
 
 .fadeAnim{
