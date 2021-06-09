@@ -14,12 +14,13 @@
     <a class="navlink fadeTarget" href="#contact">Contact</a>
     <a class="navlink fadeTarget" href="#projects">Work</a>
     <a class="navlink fadeTarget" href="#about">About</a>
+    <a class="navlink fadeTarget" href="#welcome-section">Top</a>
   </nav>
   <section id="welcome-section">
     <div class="bg"></div>
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
-    <h1 id="intro" class="white-text"><span id="hello" data-text="Hello my name is">Hello my name is </span><br id="introBreaker"><span id="adam">Adam Walker</span></h1>
+    <h1 id="intro" class="white-text"><span id="hello" data-text="Hello my name is">Hello my name is </span><br class="line-breaker"><span id="adam">Adam Walker</span></h1>
     <h2 id="sub-heading" class="white-text fadeTarget">Aspiring web developer and freeCodeCamp student.</h2>
     <div id="icons">
       <div id="linkedin" class="icon-container fadeTarget">
@@ -36,70 +37,74 @@
     <h2 class="heading white-text slideRight slideSideTarget fadeTarget">About me </h2>
     <div id="about-container" class="white-text">
       <p class="fadeTarget">Starting in early 2019, I have been steadily improving my web development skills through a number of online resources. I hope to one day become a professional web developer.</p>
-      <p class="proficiency-list fadeTarget">I am currently experienced in:</p>
-     
-      <table class="proficiency-table">
-        <tr>
-          <td><i class="fab fa-html5"></i> HTML</td>
-          <td><i class="icon-jquery"></i> jQuery</td>
-        </tr>
-        <tr>
-          <td ><i class="fab fa-css3"></i> CSS</td>
-          <td><i class="fab fa-node-js"></i> Node JS</td>
-        </tr>
-        <tr>
-          <td><i class="fab fa-bootstrap"></i> Bootstrap 4</td>
-          <td><i class="icon-mongodb"></i> MongoDb</td>
-        </tr>
-        <tr>
-          <td><i class="fab fa-js"></i> Javascript</td>
-          <td><i class="icon-npm"></i> Express & EJS</td>
-        </tr>
-      </table>
+      <p class="proficiency-subheading fadeTarget">I am currently experienced in:</p>
+      <div id="proficiency-table" class="fadeTarget">
+
+<div class="left column" >
+ <p><i class="fab fa-html5"></i> HTML</p> <p><i class="fab fa-css3"></i> CSS</p>
+  <p><i class="fab fa-bootstrap"></i> Bootstrap 4</p>
+  <p><i class="fab fa-js"></i> Javascript</p></div>
+
+<div class="right column" ><p><i class="icon-jquery"></i> jQuery</p><p><i class="fab fa-node-js"></i> Node JS</p><p><i class="icon-mongodb"></i> MongoDb</p><p><i class="icon-npm"></i> Express & EJS</p></div>
+</div>
+
     </div>
   </section>
   <section id="projects">
     <h2 class="heading white-text slideLeft slideSideTarget">My Projects</h2> 
+    
     <div class="slideUpTarget project-base white-text dark-grey-background">
-      <img class="project-image top-image" src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/dogBase-2.jpg" width="100%">
+      <a class="project-image top-image" href=""><img  src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/dogbase-image-2.png" width="100%"></a>
       <div>
-        <h3 class="project-title">dogBase</h3>
-    <p class="project-blurb">A content-sharing -website similar to Reddit built using Node, Express and MongoDB. Users are able to create accounts & upload, edit or delete content while interacting with other users uploads. Full cloud storage using MongoDB Atlas and Cloudinary. </p>
-    <button class="">Visit</button>
-    <button class="">Github</button>
+        <h1 class="project-title project-descriptor">dogBase</h1>
+        <h2 class="project-skills project-descriptor">NodeJs, MongoDB, Javascript</h2>
+    <p class="project-blurb project-descriptor">A content-sharing -website similar to Reddit built using Node, Express and MongoDB. Users are able to create accounts & upload, edit or delete content while interacting with other users uploads. Full cloud storage using MongoDB Atlas and Cloudinary. </p>
+    <div class="button-container">
+        <a class="project-button visit" href="" target="_blank">Visit</a>
+    <a class="project-button github"  href="" target="_blank">Github</a>
+        </div>
     </div>
-    <img class="project-image bottom-image" src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/dogBase-2.jpg" width="100%">
+     <a class="project-image bottom-image" href=""><img  src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/dogbase-image-2.png" width="100%"></a>
   </div>
     
    <div class="slideUpTarget project-base white-text dark-grey-background">
-     <img class="project-image top-image" src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/dogBase-2.jpg" width="100%">
+     <a class="project-image top-image" href=""><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/quote-generator-image-2.png" width="100%"></a>
       <div>
-        <h3 class="project-title">API Quote Generator</h3>
-    <p class="project-blurb">Makes use of the Axios API promise based HTTP client to pull and display random inspirational quotes with a random background. Additional styling using jQuery. The project also features twitter integration allowing the user to tweet the quote directly from the site.</p>
-    <button>Visit</button>
-    <button>Github</button>
+        <h3 class="project-title project-descriptor">API Quote Generator</h3>
+        <h2 class="project-skills project-descriptor">Javascript, jQuery Axios</h2>
+    <p class="project-blurb project-descriptor">Makes use of the Axios API promise based HTTP client to pull and display random inspirational quotes with a random background. Additional styling using jQuery. The project also features twitter integration allowing the user to tweet the quote directly from the site.</p>
+        <div class="button-container">
+       <a class="project-button visit" href="" target="_blank">Visit</a>
+    <a class="project-button github"  href="" target="_blank">Github</a>
+        </div>
     </div>
-    <img class="project-image bottom-image" src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/portfolio-quote-generator.jpg" width="100%">     
+    <a class="project-image bottom-image" href=""><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/quote-generator-image-2.png" width="100%"></a>
   </div>
     
       <div class="slideUpTarget project-base white-text dark-grey-background">
         <img class="project-image top-image" src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/dogBase-2.jpg" width="100%">
       <div>
-        <h3 class="project-title">DogBase</h3>
-    <p class="project-blurb">A content-sharing -website similar to Reddit built using Node, Express and MongoDB. Users are able to create accounts & upload, edit or delete content while interacting with other users uploads. Full cloud storage using MongoDB Atlas and Cloudinary. </p>
-    <button>Visit</button>
-    <button>Github</button>
+        <h3 class="project-title project-descriptor">DogBase</h3>
+         <h2 class="project-skills project-descriptor">Javascript</h2>
+    <p class="project-blurb project-descriptor">A content-sharing -website similar to Reddit built using Node, Express and MongoDB. Users are able to create accounts & upload, edit or delete content while interacting with other users uploads. Full cloud storage using MongoDB Atlas and Cloudinary. </p>
+        <div class="button-container">
+       <a class="project-button visit" href="" target="_blank">Visit</a>
+    <a class="project-button github"  href="" target="_blank">Github</a>
     </div>
+        </div>
     <img class="project-image bottom-image" src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/portfolio-quote-generator.jpg" width="100%">
   </div>
     
       <div class="slideUpTarget project-base white-text dark-grey-background">
         <img class="project-image top-image" src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/dogBase-2.jpg" width="100%">
       <div>
-        <h3 class="project-title">DogBase</h3>
-    <p class="project-blurb">A content-sharing -website similar to Reddit built using Node, Express and MongoDB. Users are able to create accounts & upload, edit or delete content while interacting with other users uploads. Full cloud storage using MongoDB Atlas and Cloudinary. </p>
-    <button>Visit</button>
-    <button>Github</button>
+        <h3 class="project-title project-descriptor">DogBase</h3>
+         <h2 class="project-skills project-descriptor">Javascript</h2>
+    <p class="project-blurb project-descriptor">A content-sharing -website similar to Reddit built using Node, Express and MongoDB. Users are able to create accounts & upload, edit or delete content while interacting with other users uploads. Full cloud storage using MongoDB Atlas and Cloudinary. </p>
+        <div class="button-container">
+       <a class="project-button visit" href="" target="_blank">Visit</a>
+    <a class="project-button github"  href="" target="_blank">Github</a>
+        </div>
     </div>
     <img class="project-image bottom-image" src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/portfolio-quote-generator.jpg" width="100%">
   </div>
@@ -109,7 +114,9 @@
   </section>
   <section id="contact" class="dark-grey-background white-text">
     <h2 class="heading white-text slideRight slideSideTarget">Let's work together!</h2>
-    <form >
+    <div id="form-container">
+    <h3 id="form-header" class="swing-up-target"><span>Want to contact me? </span><span id="of-course">Of course you do!</span></h3>
+    <form id="scale-up-target">
       <label for="name">Your Name</label>
       <br>
       <input type="text" id="name" name="yourname" placeholder="Enter your name">
@@ -131,9 +138,15 @@
         <input type="submit" value="Send" id="submit" >
       </div>
     </form>
+    </div>
   </section>
   <footer class="white-text">
-    <p class="fadeTarget"> &copy; Adam Walker 2020 </p>
+    <p id="copyright" class="fadeTarget"> &copy; Adam Walker 2020</p>
+    <p id="footer-icons" class="fadeTarget">
+      <a href=""><i class="fab fa-linkedin-in"></i> </a>
+      <a href=""><i class="fab fa-codepen"></i> </a> 
+      <a href=""><i class="fab fa-github"></i> </a> 
+      <a href=""><i class="fab fa-twitter"></i> </a></p>
   </footer>
   <script type="text/javascript" src="funcs.js"></script>
 </body>
