@@ -10,6 +10,7 @@ window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
+
 function animator(target, anim) {
   observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
