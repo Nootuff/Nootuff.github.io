@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Adam Walker Personal Portfolio Web-page</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
@@ -12,7 +11,6 @@
 </head>
 
 <body>
- 
   <section id="welcome-section">
     <div class="bg"></div>
     <div class="bg bg2"></div>
@@ -35,18 +33,20 @@
     </div>
   </section>
   
-   <nav id="navbar" class="dark-grey-background ">
+   <nav id="navbar">
     <a class="navlink fade-to-blue fade-target" href="#contact">Contact</a>
     <a class="navlink fade-to-blue fade-target" href="#projects">Work</a>
     <a class="navlink fade-to-blue fade-target" href="#about">About</a>
     <a class="navlink fade-to-blue fade-target" href="#welcome-section">Top</a>
   </nav>
   
-  <section id="about" class="dark-grey-background ">
-    <h2 class="heading white-text slideRight slideSideTarget fade-target">About me </h2>
+  <section id="about">
+    <h2 class="heading white-text slide-right slide-side-target fade-target">About me </h2>
     <div id="about-container" class="white-text">
-      <p class="fade-target" id="about-para">Starting in early 2019, I have been steadily improving my web development skills through a number of online resources. I hope to one day become a professional web developer.</p>
-      <p class="proficiency-subheading fade-target">I am currently experienced in:</p>
+      <div class="fade-target">
+      <p id="about-para">Starting in early 2019, I have been steadily improving my web development skills through a number of online resources. I hope to one day become a professional web developer.</p>
+      <p id="proficiency-subheading">I am currently experienced in:</p>
+      </div>
       <div id="proficiency-table" class="fade-target">
         <div class="left column">
           <p><i class="fab fa-html5"></i> HTML</p>
@@ -63,24 +63,25 @@
       </div>
     </div>
   </section>
+  
   <section id="projects">
-    <h2 class="heading white-text slide-left slideSideTarget">My Projects</h2>
+    <h2 class="heading white-text slide-left slide-side-target">My Projects</h2>
 
-    <div class="slideUpTarget project-base white-text dark-grey-background">
+    <div class="slide-up-target project-base white-text">
       <a class="project-image top-image" href="https://www.dogbase.net/" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/dogbase-image-2.png" width="100%"></a>
       <div>
         <h1 class="project-title project-descriptor">dogBase</h1>
         <h2 class="project-skills project-descriptor">NodeJs, MongoDB, Javascript</h2>
         <p class="project-blurb project-descriptor">A content-sharing -website similar to Reddit built using Node, Express and MongoDB. Users are able to create accounts & upload, edit or delete content while interacting with other users uploads. Full cloud storage using MongoDB Atlas and Cloudinary. </p>
         <div class="button-container">
-          <a class="project-button visit" href="https://www.dogbase.net/" target="_blank">Visit</a>
-          <a class="project-button github" href="https://github.com/Nootuff/Express-Dog-Project" target="_blank">Github</a>
+          <a class="project-button visit " href="https://www.dogbase.net/" target="_blank">Visit</a>
+          <a class="project-button github " href="https://github.com/Nootuff/Express-Dog-Project" target="_blank">Github</a>
         </div>
       </div>
       <a class="project-image bottom-image" href="https://www.dogbase.net/" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/dogbase-image-2.png" width="100%"></a>
     </div>
 
-    <div class="slideUpTarget project-base white-text dark-grey-background">
+    <div class="slide-up-target project-base white-text">
       <a class="project-image top-image" href="https://codepen.io/nootuff/full/bGpzgvx" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/quote-generator-image-2.png" width="100%"></a>
       <div>
         <h3 class="project-title project-descriptor">API Quote Generator</h3>
@@ -91,11 +92,11 @@
           <a class="project-button github" href="https://github.com/Nootuff/API-Random-Quote-Generator" target="_blank">Github</a>
         </div>
       </div>
-      <a class="project-image bottom-image" href="https://codepen.io/nootuff/full/bGpzgvx"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/quote-generator-image-2.png" width="100%"></a>
+      <a class="project-image bottom-image" href="https://codepen.io/nootuff/full/bGpzgvx" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/quote-generator-image-2.png" width="100%"></a>
     </div>
 
-    <div class="slideUpTarget project-base white-text dark-grey-background">
-      <a class="project-image top-image" href="https://codepen.io/nootuff/full/bGEgEjv" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/numeral-converter-2.png" width="100%"></a>
+    <div class="slide-up-target project-base white-text">
+      <a class="project-image top-image " href="https://codepen.io/nootuff/full/bGEgEjv" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/numeral-converter-2.png" width="100%"></a>
       <div>
         <h3 class="project-title project-descriptor">Roman Numeral Converter</h3>
         <h2 class="project-skills project-descriptor">Javascript</h2>
@@ -105,10 +106,10 @@
           <a class="project-button github" href="https://github.com/Nootuff/JavaScript-Roman-Numeral-Convertor" target="_blank">Github</a>
         </div>
       </div>
-      <a class="project-image bottom-image" href="https://codepen.io/nootuff/full/bGEgEjv" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/numeral-converter-2.png" width="100%"></a>
+      <a class="project-image bottom-image " href="https://codepen.io/nootuff/full/bGEgEjv" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/numeral-converter-2.png" width="100%"></a>
     </div>
 
-    <div class="slideUpTarget project-base white-text dark-grey-background">
+    <div class="slide-up-target project-base white-text">
       <a class="project-image top-image" href="https://codepen.io/nootuff/full/eYJZKge" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/palindrome-checker-2.png" width="100%"></a>
       <div>
         <h3 class="project-title project-descriptor">Palindrome Checker</h3>
@@ -121,13 +122,13 @@
       </div>
       <a class="project-image bottom-image" href="https://codepen.io/nootuff/full/eYJZKge" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/palindrome-checker-2.png" width="100%"></a>
     </div>
-
     <a href="https://codepen.io/nootuff" target="_blank" id="profile-link">
       <p id="link-container" class="fade-target">See More</p>
     </a>
   </section>
-  <section id="contact" class="dark-grey-background white-text">
-    <h2 class="heading white-text slideRight slideSideTarget">Let's work together!</h2>
+  
+  <section id="contact" class="white-text">
+    <h2 class="heading white-text slide-right slide-side-target">Let's work together!</h2>
     <div id="form-container">
       <h3 id="form-header" class="swing-up-target"><span>Want to contact me? </span><span id="of-course">Of course you do!</span></h3>
       <form id="scale-up-target">
@@ -154,6 +155,7 @@
       </form>
     </div>
   </section>
+  
   <footer class="white-text">
     <p id="copyright" class="fade-target"> &copy; Adam Walker 2020</p>
     <p id="footer-icons" class="fade-target">
@@ -165,5 +167,4 @@
   </footer>
   <script type="text/javascript" src="funcs.js"></script>
 </body>
-
 </html>
