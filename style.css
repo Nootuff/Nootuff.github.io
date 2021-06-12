@@ -1,3 +1,11 @@
+:root {
+  --light-blue-color: #a0c4fd;
+  --dark-blue-color: #002a6d;
+  --blue-color: #448bfc;
+  --dark-grey-color: #1d1e22;
+  --white-color: #ffffff;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -8,14 +16,7 @@ body {
   margin: 0 auto;
   padding: 0;
   font-family: Nunito;
-}
-
-:root {
-  --light-blue-color: #a0c4fd;
-  --dark-blue-color: #002a6d;
-  --blue-color: #448bfc;
-  --dark-grey-color: #1d1e22;
-  --white-color: #ffffff;
+	background-color: var(--dark-grey-color);
 }
 
 a {
