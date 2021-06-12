@@ -1,157 +1,169 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Adam Walker Personal Portfolio Web-page</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/0db405f613.js"></script>
+      <script  src="https://code.jquery.com/jquery-3.5.1.min.js"  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="  crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css" integrity="sha512-Cdvnk1SFWqcb3An6gMyqDRH40Js8qmsWcSK10I2gSifCe2LilaPMsHd6DldEvQ3uIlCb1qdRUrNeAFFleOu4xQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <nav id="navbar" class="dark-grey-background ">
-    <a class="navlink fadeTarget" href="#contact">Contact</a>
-    <a class="navlink fadeTarget" href="#projects">Work</a>
-    <a class="navlink fadeTarget" href="#about">About</a>
-    <a class="navlink fadeTarget" href="#welcome-section">Top</a>
-  </nav>
+ 
   <section id="welcome-section">
     <div class="bg"></div>
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
     <h1 id="intro" class="white-text"><span id="hello" data-text="Hello my name is">Hello my name is </span><br class="line-breaker"><span id="adam">Adam Walker</span></h1>
-    <h2 id="sub-heading" class="white-text fadeTarget">Aspiring web developer and freeCodeCamp student.</h2>
-    <div id="icons" class="fadeTarget">
-      <div id="linkedin" class="icon-container fadeTarget">
-        <a href="https://www.linkedin.com/in/adamwalkeruk/" target="_blank" class="linkIcon fab fa-linkedin-in"></a></div>
-      <div id="codepen" class="icon-container fadeTarget">
-        <a href="https://codepen.io/nootuff" target="_blank" class="linkIcon fab fa-codepen"></a></div>
-      <div id="github" class="icon-container fadeTarget">
-        <a href="https://github.com/Nootuff" target="_blank" class="linkIcon fab fa-github"></a></div>
-      <div id="twitter" class="icon-container fadeTarget">
-        <a href="https://twitter.com/AdamJonWalker" target="_blank" class="linkIcon fab fa-twitter"></a></div>
+    <h2 id="sub-heading" class="white-text fade-target">Aspiring web developer and freeCodeCamp student.</h2>
+    <div id="icons" class="fade-target">
+      <div id="linkedin" class="icon-container fade-target">
+        <a href="https://www.linkedin.com/in/adamwalkeruk/" target="_blank" class="linkIcon fab fa-linkedin-in"></a>
+      </div>
+      <div id="codepen" class="icon-container fade-target">
+        <a href="https://codepen.io/nootuff" target="_blank" class="linkIcon fab fa-codepen"></a>
+      </div>
+      <div id="github" class="icon-container fade-target">
+        <a href="https://github.com/Nootuff" target="_blank" class="linkIcon fab fa-github"></a>
+      </div>
+      <div id="twitter" class="icon-container fade-target">
+        <a href="https://twitter.com/AdamJonWalker" target="_blank" class="linkIcon fab fa-twitter"></a>
+      </div>
     </div>
-    
   </section>
-  <section id="about" class="dark-grey-background">
-    <h2 class="heading white-text slideRight slideSideTarget fadeTarget">About me </h2>
+  
+   <nav id="navbar" class="dark-grey-background ">
+    <a class="navlink fade-to-blue fade-target" href="#contact">Contact</a>
+    <a class="navlink fade-to-blue fade-target" href="#projects">Work</a>
+    <a class="navlink fade-to-blue fade-target" href="#about">About</a>
+    <a class="navlink fade-to-blue fade-target" href="#welcome-section">Top</a>
+  </nav>
+  
+  <section id="about" class="dark-grey-background ">
+    <h2 class="heading white-text slideRight slideSideTarget fade-target">About me </h2>
     <div id="about-container" class="white-text">
-      <p class="fadeTarget" id="about-para">Starting in early 2019, I have been steadily improving my web development skills through a number of online resources. I hope to one day become a professional web developer.</p>
-      <p class="proficiency-subheading fadeTarget">I am currently experienced in:</p>
-      <div id="proficiency-table" class="fadeTarget">
-
-<div class="left column" >
- <p><i class="fab fa-html5"></i> HTML</p> <p><i class="fab fa-css3"></i> CSS</p>
-  <p><i class="fab fa-bootstrap"></i> Bootstrap 4</p>
-  <p><i class="fab fa-js"></i> Javascript</p></div>
-
-<div class="right column" >
-  <p><i class="icon-jquery"></i> jQuery</p>
-  <p><i class="fab fa-node-js"></i> Node JS</p><p><i class="icon-mongodb"></i> MongoDb</p><p><i class="icon-npm"></i> Express & EJS</p></div>
-</div>
-
+      <p class="fade-target" id="about-para">Starting in early 2019, I have been steadily improving my web development skills through a number of online resources. I hope to one day become a professional web developer.</p>
+      <p class="proficiency-subheading fade-target">I am currently experienced in:</p>
+      <div id="proficiency-table" class="fade-target">
+        <div class="left column">
+          <p><i class="fab fa-html5"></i> HTML</p>
+          <p><i class="fab fa-css3"></i> CSS</p>
+          <p><i class="fab fa-bootstrap"></i> Bootstrap 4</p>
+          <p><i class="fab fa-js"></i> Javascript</p>
+        </div>
+        <div class="right column">
+          <p><i class="icon-jquery"></i> jQuery</p>
+          <p><i class="fab fa-node-js"></i> Node JS</p>
+          <p><i class="icon-mongodb"></i> MongoDb</p>
+          <p><i class="icon-npm"></i> Express & EJS</p>
+        </div>
+      </div>
     </div>
   </section>
   <section id="projects">
-    <h2 class="heading white-text slideLeft slideSideTarget">My Projects</h2> 
-    
+    <h2 class="heading white-text slide-left slideSideTarget">My Projects</h2>
+
     <div class="slideUpTarget project-base white-text dark-grey-background">
-      <a class="project-image top-image" href=""><img  src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/dogbase-image-2.png" width="100%"></a>
+      <a class="project-image top-image" href="https://www.dogbase.net/" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/dogbase-image-2.png" width="100%"></a>
       <div>
         <h1 class="project-title project-descriptor">dogBase</h1>
         <h2 class="project-skills project-descriptor">NodeJs, MongoDB, Javascript</h2>
-    <p class="project-blurb project-descriptor">A content-sharing -website similar to Reddit built using Node, Express and MongoDB. Users are able to create accounts & upload, edit or delete content while interacting with other users uploads. Full cloud storage using MongoDB Atlas and Cloudinary. </p>
-    <div class="button-container">
-        <a class="project-button visit" href="" target="_blank">Visit</a>
-    <a class="project-button github"  href="" target="_blank">Github</a>
+        <p class="project-blurb project-descriptor">A content-sharing -website similar to Reddit built using Node, Express and MongoDB. Users are able to create accounts & upload, edit or delete content while interacting with other users uploads. Full cloud storage using MongoDB Atlas and Cloudinary. </p>
+        <div class="button-container">
+          <a class="project-button visit" href="https://www.dogbase.net/" target="_blank">Visit</a>
+          <a class="project-button github" href="https://github.com/Nootuff/Express-Dog-Project" target="_blank">Github</a>
         </div>
+      </div>
+      <a class="project-image bottom-image" href="https://www.dogbase.net/" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/dogbase-image-2.png" width="100%"></a>
     </div>
-     <a class="project-image bottom-image" href=""><img  src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/dogbase-image-2.png" width="100%"></a>
-  </div>
-    
-   <div class="slideUpTarget project-base white-text dark-grey-background">
-     <a class="project-image top-image" href=""><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/quote-generator-image-2.png" width="100%"></a>
+
+    <div class="slideUpTarget project-base white-text dark-grey-background">
+      <a class="project-image top-image" href="https://codepen.io/nootuff/full/bGpzgvx" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/quote-generator-image-2.png" width="100%"></a>
       <div>
         <h3 class="project-title project-descriptor">API Quote Generator</h3>
         <h2 class="project-skills project-descriptor">Javascript, jQuery Axios</h2>
-    <p class="project-blurb project-descriptor">Makes use of the Axios API promise based HTTP client to pull and display random inspirational quotes with a random background. Additional styling using jQuery. The project also features twitter integration allowing the user to tweet the quote directly from the site.</p>
+        <p class="project-blurb project-descriptor">Makes use of the Axios API promise based HTTP client to pull and display random inspirational quotes with a random background. Additional styling using jQuery. The project also features twitter integration allowing the user to tweet the quote directly from the site.</p>
         <div class="button-container">
-       <a class="project-button visit" href="" target="_blank">Visit</a>
-    <a class="project-button github"  href="" target="_blank">Github</a>
+          <a class="project-button visit" href="https://codepen.io/nootuff/full/bGpzgvx" target="_blank">Visit</a>
+          <a class="project-button github" href="https://github.com/Nootuff/API-Random-Quote-Generator" target="_blank">Github</a>
         </div>
+      </div>
+      <a class="project-image bottom-image" href="https://codepen.io/nootuff/full/bGpzgvx"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/quote-generator-image-2.png" width="100%"></a>
     </div>
-    <a class="project-image bottom-image" href=""><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/quote-generator-image-2.png" width="100%"></a>
-  </div>
-    
-      <div class="slideUpTarget project-base white-text dark-grey-background">
-        <a class="project-image top-image" href=""><img  src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/numeral-converter-2.png" width="100%"></a>
+
+    <div class="slideUpTarget project-base white-text dark-grey-background">
+      <a class="project-image top-image" href="https://codepen.io/nootuff/full/bGEgEjv" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/numeral-converter-2.png" width="100%"></a>
       <div>
         <h3 class="project-title project-descriptor">Roman Numeral Converter</h3>
-         <h2 class="project-skills project-descriptor">Javascript</h2>
-    <p class="project-blurb project-descriptor">This app can convert any number up to 4999 to its Roman numeral equivalent. It will also convert & display the component numbers to demonstrate the makeup of the overall figure.</p>
+        <h2 class="project-skills project-descriptor">Javascript</h2>
+        <p class="project-blurb project-descriptor">This app can convert any number up to 4999 to its Roman numeral equivalent. It will also convert & display the component numbers to demonstrate the makeup of the overall figure.</p>
         <div class="button-container">
-       <a class="project-button visit" href="" target="_blank">Visit</a>
-    <a class="project-button github"  href="" target="_blank">Github</a>
-    </div>
+          <a class="project-button visit" href="https://codepen.io/nootuff/full/bGEgEjv" target="_blank">Visit</a>
+          <a class="project-button github" href="https://github.com/Nootuff/JavaScript-Roman-Numeral-Convertor" target="_blank">Github</a>
         </div>
-    <a class="project-image bottom-image" href=""><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/numeral-converter-2.png" width="100%"></a>
-  </div>
-    
-      <div class="slideUpTarget project-base white-text dark-grey-background">
-         <a class="project-image top-image" href=""><img  src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/palindrome-checker-2.png" width="100%"></a>
+      </div>
+      <a class="project-image bottom-image" href="https://codepen.io/nootuff/full/bGEgEjv" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/numeral-converter-2.png" width="100%"></a>
+    </div>
+
+    <div class="slideUpTarget project-base white-text dark-grey-background">
+      <a class="project-image top-image" href="https://codepen.io/nootuff/full/eYJZKge" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/palindrome-checker-2.png" width="100%"></a>
       <div>
         <h3 class="project-title project-descriptor">Palindrome Checker</h3>
-         <h2 class="project-skills project-descriptor">Javascript</h2>
-    <p class="project-blurb project-descriptor">An app that can check whether an inputted word, number or phrase is a palindrome. The design is completely responsive, the app was built using simple JavaScript.</p>
+        <h2 class="project-skills project-descriptor">Javascript</h2>
+        <p class="project-blurb project-descriptor">An app that can check whether an inputted word, number or phrase is a palindrome. The design is completely responsive, the app was built using simple JavaScript.</p>
         <div class="button-container">
-       <a class="project-button visit" href="" target="_blank">Visit</a>
-    <a class="project-button github"  href="" target="_blank">Github</a>
+          <a class="project-button visit" href="https://codepen.io/nootuff/full/eYJZKge" target="_blank">Visit</a>
+          <a class="project-button github" href="https://github.com/Nootuff/Palindrome-checker" target="_blank">Github</a>
         </div>
+      </div>
+      <a class="project-image bottom-image" href="https://codepen.io/nootuff/full/eYJZKge" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/palindrome-checker-2.png" width="100%"></a>
     </div>
-    <a class="project-image bottom-image" href=""><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/palindrome-checker-2.png" width="100%"></a>
-  </div>
-    
+
     <a href="https://codepen.io/nootuff" target="_blank" id="profile-link">
-      <p id="link-container" class="fadeTarget">See More</p>
+      <p id="link-container" class="fade-target">See More</p>
     </a>
   </section>
   <section id="contact" class="dark-grey-background white-text">
     <h2 class="heading white-text slideRight slideSideTarget">Let's work together!</h2>
     <div id="form-container">
-    <h3 id="form-header" class="swing-up-target"><span>Want to contact me? </span><span id="of-course">Of course you do!</span></h3>
-    <form id="scale-up-target">
-      <label for="name">Your Name</label>
-      <br>
-      <input type="text" id="name" name="yourname" placeholder="Enter your name">
-      <br>
-      <label for="email">Your Email</label>
-      <br>
-      <input type="email" id="email" placeholder=" Enter your email" required>
-      <br>
-      <label for="number">Your Number</label>
-      <br>
-      <input type="tel" name="number" id="number">
-      <br>
-      <label for="comment">Your Message</label>
-      <br>
-      <textarea rows="4" cols="50" name="comment" id="comment" placeholder=" Something to say?" form="usrform">
+      <h3 id="form-header" class="swing-up-target"><span>Want to contact me? </span><span id="of-course">Of course you do!</span></h3>
+      <form id="scale-up-target">
+        <label for="name">Your Name</label>
+        <br>
+        <input type="text" id="name" name="yourname" placeholder="Enter your name">
+        <br>
+        <label for="email">Your Email</label>
+        <br>
+        <input type="email" id="email" placeholder=" Enter your email" required>
+        <br>
+        <label for="number">Your Number</label>
+        <br>
+        <input type="tel" name="number" id="number">
+        <br>
+        <label for="comment">Your Message</label>
+        <br>
+        <textarea rows="4" cols="50" name="comment" id="comment" placeholder=" Something to say?" form="usrform">
 </textarea>
-      <br>
-      <div id="submit-container">
-        <input type="submit" value="Send" id="submit" >
-      </div>
-    </form>
+        <br>
+        <div id="submit-container">
+          <input type="submit" value="Send" id="submit">
+        </div>
+      </form>
     </div>
   </section>
   <footer class="white-text">
-    <p id="copyright" class="fadeTarget"> &copy; Adam Walker 2020</p>
-    <p id="footer-icons" class="fadeTarget">
-      <a href=""><i class="fab fa-linkedin-in"></i> </a>
-      <a href=""><i class="fab fa-codepen"></i> </a> 
-      <a href=""><i class="fab fa-github"></i> </a> 
-      <a href=""><i class="fab fa-twitter"></i> </a></p>
+    <p id="copyright" class="fade-target"> &copy; Adam Walker 2020</p>
+    <p id="footer-icons" class="fade-target">
+      <a href="https://www.linkedin.com/in/adamwalkeruk/" target="_blank"><i class="fab fa-linkedin-in fade-to-blue"></i> </a>
+      <a href="https://codepen.io/nootuff" id="footer-icon-1"><i class="fab fa-codepen fade-to-blue" target="_blank"></i> </a>
+      <a href="https://github.com/Nootuff" id="footer-icon-2"><i class="fab fa-github fade-to-blue" target="_blank"></i> </a>
+      <a href="https://twitter.com/AdamJonWalker"><i class="fab fa-twitter fade-to-blue" target="_blank"></i> </a>
+    </p>
   </footer>
   <script type="text/javascript" src="funcs.js"></script>
 </body>
+
 </html>
