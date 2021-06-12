@@ -15,13 +15,12 @@ $(document).ready(function() {
   $(window).scroll(function () { 
       var height = window.innerHeight ;
       console.log($(window).scrollTop())
-    if ($(window).scrollTop() > height +43 ) {
+    if ($(window).scrollTop() > height ) {
       $('#navbar').addClass('navbar-fixed');
-       $('#about').addClass('about-margin');
+   
     }
-    if ($(window).scrollTop() < height + 44) {
+    if ($(window).scrollTop() < height + 1) {
       $('#navbar').removeClass('navbar-fixed');
-      $('#about').removeClass('about-margin');
     }
   });
 });
