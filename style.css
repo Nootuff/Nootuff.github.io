@@ -171,7 +171,7 @@ margin: 0 auto;
 
 .heading {
   margin: 55px auto 0;
- font-size: 37px;
+ font-size: 43px;
   display: inline-block;
   background-color: var(--blue-color);
   width: 90%;
@@ -668,7 +668,7 @@ footer {
   }
 
 .heading {
-    font-size: 45px;
+    font-size: 60px;
     width: 70%;
   }
 }
