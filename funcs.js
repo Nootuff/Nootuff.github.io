@@ -1,6 +1,6 @@
 // Resets the value of vh to account fo mobile browsers. First, get the viewport height & multiplyit by 1% to get a value for a vh unit.
 let vh = window.innerHeight * 0.01;
-// Then set the value in the --vh custom property to the root of the document
+// Then set the value in the --vh custom property to the root of the document.
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 // Listen to the resize event
@@ -9,15 +9,13 @@ window.addEventListener('resize', () => {
   let vh = window.innerHeight * 0.01; document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
-// Jquery script for the navbar
+// Jquery script for the sticky navbar.
 $(document).ready(function() {
-  
   $(window).scroll(function () { 
       var height = window.innerHeight ;
       console.log($(window).scrollTop())
     if ($(window).scrollTop() > height ) {
       $('#navbar').addClass('navbar-fixed');
-   
     }
     if ($(window).scrollTop() < height + 1) {
       $('#navbar').removeClass('navbar-fixed');
@@ -33,7 +31,7 @@ function animator(target, anim) {
         entry.target.classList.add(anim);
       }
       else {
-        entry.target.classList.add('none');
+      entry.target.classList.add('none');
       }
     })
   })
@@ -48,14 +46,14 @@ animator(fadeTarget, 'fade-animate');
 const glowTarget = document.querySelectorAll('#adam');
 animator(glowTarget, 'glow-animate');
 
-const slideSideTarget = document.querySelectorAll('.slideSideTarget');
-animator(slideSideTarget, "slideSideAnim");
+const slideSideTarget = document.querySelectorAll('.slide-side-target');
+animator(slideSideTarget, "slide-side-animate");
 
 const left = document.querySelectorAll(".left");
-animator(left, "slam-anim");
+animator(left, "slam-animate");
 
-const slideUpTarget = document.querySelectorAll(".slideUpTarget");
-animator(slideUpTarget, "slideUpAnim");
+const slideUpTarget = document.querySelectorAll(".slide-up-target");
+animator(slideUpTarget, "slide-up-animate");
 
 const swingUpTarget = document.querySelectorAll(".swing-up-target");
 animator(swingUpTarget, "swing-up-anim");
