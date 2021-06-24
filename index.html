@@ -132,14 +132,14 @@
     <h2 class="heading white-text slide-right slide-side-target">Contact</h2>
     <div id="form-container">
       <h3 id="form-header" class="swing-up-target"><span>Want to contact me? </span><span id="of-course">Of course you do!</span></h3>
-      <form id="scale-up-target">
+      <form id="scale-up-target" action="contact.php" method="post">
         <label for="name">Your Name</label>
         <br>
-        <input type="text" id="name" name="yourname" placeholder="Enter your name">
+        <input name="name" type="text" id="name" name="yourname" placeholder="Enter your name">
         <br>
         <label for="email">Your Email</label>
         <br>
-        <input type="email" id="email" placeholder=" Enter your email" required>
+        <input name="email" type="email" id="email" placeholder=" Enter your email" required>
         <br>
         <label for="number">Your Number</label>
         <br>
