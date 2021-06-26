@@ -60,3 +60,13 @@ animator(swingUpTarget, "swing-up-anim");
 
 const scaleUpTarget = document.querySelectorAll("#scale-up-target");
 animator(scaleUpTarget, "scale-up-anim");
+
+function emptyChecker() {
+  let name = document.getElementById("name").value;
+let comment = document.getElementById("comment").value;
+  
+  if (comment == "" || name == "" ) {
+      alert("Enter your name and a message");
+      return false;
+  };
+}
