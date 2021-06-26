@@ -24,7 +24,7 @@ $(document).ready(function() {
 });
 
 // Function to apply animation classes to elements as they scroll into view.
-function animator(target, anim) {
+animator = (target, anim) => {
   observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.intersectionRatio > 0) {
@@ -61,7 +61,7 @@ animator(swingUpTarget, "swing-up-anim");
 const scaleUpTarget = document.querySelectorAll("#scale-up-target");
 animator(scaleUpTarget, "scale-up-anim");
 
-function emptyChecker() {
+emptyChecker = () => {
   let name = document.getElementById("name").value;
 let comment = document.getElementById("comment").value;
   
