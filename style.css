@@ -569,7 +569,7 @@ footer {
 }
 
 .fade-animate {
-  animation: fade-in 4s forwards;
+  animation: fade-in 3s forwards;
 }
 
 @keyframes fade-in {
