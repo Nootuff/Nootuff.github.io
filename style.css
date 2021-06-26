@@ -29,6 +29,10 @@ a {
   color: var(--white-color);
 }
 
+.blue-text{
+  color: var(--blue-color);
+}
+
 .fade-target {
   opacity: 0;
 }
@@ -128,7 +132,6 @@ margin: 0 auto;
   position:relative;
   z-index:0;
   opacity: 0;
-  color: var(--blue-color);
 }
 
 #sub-heading {
@@ -272,7 +275,6 @@ text-align: left;
 }
 
 .project-skills {
-color: var(--blue-color);
      margin-bottom: 30px;
 }
 
@@ -407,10 +409,6 @@ color: var(--blue-color);
   opacity: 0;
 }
 
-#of-course {
-  color: var(--blue-color);
-}
-
 .swing-up-anim {
   animation: swing-up 0.7s forwards;
 }
@@ -466,6 +464,11 @@ textarea {
   border-radius: 5px;
   box-sizing: border-box;
   margin-bottom: 8px;
+  color: white;
+}
+
+textarea:focus, input:focus{
+  outline: none;
 }
 
 textarea {
@@ -479,6 +482,7 @@ textarea {
 #submit {
   background-size: 100% 200%;
   border-radius: 0px;
+  cursor: pointer;
   background-image: linear-gradient(
     to bottom,
     var(--white-color) 50%,
