@@ -15,7 +15,7 @@
     <div class="bg"></div>
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
-    <h1 id="intro" class="white-text"><span id="hello" data-text="Hello my name is">Hello my name is </span><br class="line-breaker"><span id="adam">Adam Walker</span></h1>
+    <h1 id="intro" class="white-text"><span id="hello" data-text="Hello my name is">Hello my name is </span><br class="line-breaker"><span id="adam" class="blue-text">Adam Walker</span></h1>
     <h2 id="sub-heading" class="white-text fade-target">Aspiring web developer and freeCodeCamp student.</h2>
     <div id="icons" class="fade-target">
       <div id="linkedin" class="icon-container fade-target">
@@ -72,7 +72,7 @@
       <a class="project-image top-image" href="https://www.dogbase.net/" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/dogbase-image-2.png" width="100%"></a>
       <div>
         <h1 class="project-title project-descriptor">dogBase</h1>
-        <h2 class="project-skills project-descriptor">NodeJs, MongoDB, Javascript</h2>
+        <h2 class="project-skills blue-text project-descriptor">NodeJs, MongoDB, Javascript</h2>
         <p class="project-blurb project-descriptor">A content-sharing -website similar to Reddit built using Node, Express and MongoDB. Users are able to create accounts & upload, edit or delete content while interacting with other users uploads. Full cloud storage using MongoDB Atlas and Cloudinary. </p>
         <div class="button-container">
           <a class="project-button visit " href="https://www.dogbase.net/" target="_blank">Visit</a>
@@ -86,7 +86,7 @@
       <a class="project-image top-image" href="https://codepen.io/nootuff/full/bGpzgvx" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/quote-generator-image-2.png" width="100%"></a>
       <div>
         <h3 class="project-title project-descriptor">API Quote Generator</h3>
-        <h2 class="project-skills project-descriptor">Javascript, jQuery Axios</h2>
+        <h2 class="project-skills blue-text project-descriptor">Javascript, jQuery Axios</h2>
         <p class="project-blurb project-descriptor">Makes use of the Axios API promise based HTTP client to pull and display random inspirational quotes with a random background. Additional styling using jQuery. The project also features twitter integration allowing the user to tweet the quote directly from the site.</p>
         <div class="button-container">
           <a class="project-button visit" href="https://codepen.io/nootuff/full/bGpzgvx" target="_blank">Visit</a>
@@ -100,7 +100,7 @@
       <a class="project-image top-image " href="https://codepen.io/nootuff/full/bGEgEjv" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/numeral-converter-2.png" width="100%"></a>
       <div>
         <h3 class="project-title project-descriptor">Roman Numeral Converter</h3>
-        <h2 class="project-skills project-descriptor">Javascript</h2>
+        <h2 class="project-skills blue-text project-descriptor">Javascript</h2>
         <p class="project-blurb project-descriptor">This app can convert any number up to 4999 to its Roman numeral equivalent. It will also convert & display the component numbers to demonstrate the makeup of the overall figure.</p>
         <div class="button-container">
           <a class="project-button visit" href="https://codepen.io/nootuff/full/bGEgEjv" target="_blank">Visit</a>
@@ -114,7 +114,7 @@
       <a class="project-image top-image" href="https://codepen.io/nootuff/full/eYJZKge" target="_blank"><img src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/palindrome-checker-2.png" width="100%"></a>
       <div>
         <h3 class="project-title project-descriptor">Palindrome Checker</h3>
-        <h2 class="project-skills project-descriptor">Javascript</h2>
+        <h2 class="project-skills blue-text project-descriptor">Javascript</h2>
         <p class="project-blurb project-descriptor">An app that can check whether an inputted word, number or phrase is a palindrome. The design is completely responsive, the app was built using simple JavaScript.</p>
         <div class="button-container">
           <a class="project-button visit" href="https://codepen.io/nootuff/full/eYJZKge" target="_blank">Visit</a>
@@ -131,9 +131,9 @@
   <section id="contact" class="white-text">
     <h2 class="heading white-text slide-right slide-side-target">Contact</h2>
     <div id="form-container">
-      <h3 id="form-header" class="swing-up-target"><span>Want to contact me? </span><span id="of-course">Of course you do!</span></h3>
-      
-        <form id="scale-up-target" action="https://formspree.io/f/mleajllz" method="post">
+      <h3 id="form-header" class="swing-up-target"><span>Want to contact me? </span><span class="blue-text">Of course you do!</span></h3>
+    
+      <form id="scale-up-target" action="https://formspree.io/f/mleajllz" method="post">
         <label for="name">Your Name</label>
         <br>
         <input name="name" type="text" id="name" name="yourname" placeholder="Enter your name">
@@ -142,21 +142,18 @@
         <br>
         <input name="_replyto" type="email" id="email" placeholder=" Enter your email" required>
         <br>
-        <label for="number">Your Number</label>
-        <br>
-        <input type="tel" name="number" id="number">
-        <br>
         <label for="message">Your Message
         
-        <textarea rows="4" cols="50" name="message" id="comment" placeholder=" Something to say?">
+        <textarea rows="4" cols="50" name="message" id="comment" placeholder="Your message">
 </textarea>
           </label>
         <br>
         <div id="submit-container">
-          <input type="submit" value="Send" id="submit">
+          <input type="submit" value="Send" id="submit" onclick="return emptyChecker()">
         </div>
+        <h5>Or contact me on: <span class="blue-text">adamwalkerlondon@gmail.com</span></h5>
       </form>
-      
+  
     </div>
   </section>
   <footer class="white-text">
