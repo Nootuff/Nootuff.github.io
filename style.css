@@ -516,6 +516,10 @@ textarea {
   }
 }
 
+#my-email{
+  font-size: 30px;
+}
+
 footer {
   background-color: var(--light-grey-color);
   height: 90px;
@@ -719,5 +723,9 @@ footer {
 
 .bottom-image {
   display: block;
+}
+	
+#my-email{
+  font-size: 30px;
 }
 }
