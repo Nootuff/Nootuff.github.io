@@ -37,6 +37,29 @@ a {
   opacity: 0;
 }
 
+.small-button {
+  border-radius: 3px;
+  padding: 5px 15px;
+   margin-right: 4px;
+   font-weight: bold;
+}
+
+.filling-button {
+  background-size: 100% 200%;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  color: var(--dark-grey-color);
+  background-image: linear-gradient(to bottom,
+      var(--white-color) 50%,
+      var(--blue-color) 50%);
+}
+
+.filling-button:hover {
+  background-position: 0% 100%;
+  color: var(--white-color);
+}
+
 #navbar {
   border: 0;
   height: 50px;
@@ -187,7 +210,8 @@ a {
 }
 
 #intro-button {
-margin-top: 5%;
+  margin-top: 5%;
+  animation-delay: 800ms;
 }
 
 .heading {
@@ -204,7 +228,7 @@ margin-top: 5%;
 
 #about {
   height: auto;
-  padding-bottom: 20px;
+  padding-bottom: 70px;
   text-align: center;
   background-color: var(--dark-grey-color);
 }
@@ -230,8 +254,10 @@ margin-top: 5%;
 
 #proficiency-table {
   text-align: center;
-  margin-bottom: 30px;
   animation-duration: 2s;
+ /* border: 1px solid purple; */
+  width: 70%;
+  margin: 40px auto 0;
 }
 
 .left {
@@ -247,8 +273,8 @@ margin-top: 5%;
 
 .proficiency-container {
   width: 100%;
-  /*border: 1px solid greenyellow; */
- margin-top: 30px;
+  /*border: 1px solid greenyellow;  */
+  padding-bottom: 5px;
 }
 
 .proficiency-text {
@@ -267,6 +293,7 @@ margin-top: 5%;
   border-radius: 5px;
   margin-right: 12px;
   float: left;
+  
 }
 
 .column p {
@@ -384,19 +411,9 @@ margin-top: 5%;
   margin: 40px auto 60px;
 }
 
-.project-button {
-  border-radius: 3px;
-  padding: 5px 15px;
-  background-size: 100% 200%;
-  transition: 0.5s ease-in-out;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  color: white;
-  color: var(--dark-grey-color);
-  font-weight: bold;
-  box-sizing: border-box;
-}
 
+
+/*
 .visit {
   background-image: linear-gradient(to bottom,
       var(--white-color) 50%,
@@ -410,11 +427,9 @@ margin-top: 5%;
       var(--blue-color) 50%);
   margin-left: 4px
 }
+*/
 
-.project-button:hover {
-  background-position: 0% 100%;
-  color: var(--white-color);
-}
+
 
 .slide-up-target {
   opacity: 0;
@@ -436,14 +451,19 @@ margin-top: 5%;
   }
 }
 
-#link-container {
-  color: var(--dark-grey-color);
+.large-button{
+  cursor: pointer;
   width: 250px;
   height: 50px;
   text-align: center;
   margin: 30px auto 50px auto;
   box-sizing: border-box;
   border: 3px solid var(--dark-grey-color);
+  font-size: 30px;
+  padding: 2px;
+/*
+color: var(--dark-grey-color);
+
   background-size: 100% 200%;
   background-image: linear-gradient(to bottom,
       var(--white-color) 50%,
@@ -451,13 +471,14 @@ margin-top: 5%;
   transition: 0.5s ease-in-out;
   -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
-  padding: 2px;
-  font-size: 30px;
+  
+ 
 }
 
 #link-container:hover {
   background-position: 0% 100%;
   color: var(--white-color);
+   */
 }
 
 #contact {
@@ -581,7 +602,10 @@ textarea {
   text-align: center;
 }
 
+/*
 #submit {
+
+  
   background-size: 100% 200%;
   border-radius: 0px;
   cursor: pointer;
@@ -595,12 +619,16 @@ textarea {
   margin: 0 auto;
   color: var(--dark-grey-color);
   font-size: 30px;
+  
 }
+*/
 
+/*
 #submit:hover {
   background-position: 0% 100%;
   color: var(--white-color);
 }
+*/
 
 .scale-up-anim {
   animation: scale-up 0.7s forwards;
@@ -619,7 +647,8 @@ textarea {
 }
 
 #my-email {
-  font-size: 15px;
+  /*font-size: 15px;*/
+  margin-top: -10px;
   text-align: center;
 }
 
@@ -794,8 +823,8 @@ footer {
   }
 
   .proficiency-icon {
-  width: 35px;
-  height: 35px;
+    width: 35px;
+    height: 35px;
   }
 
   .proficiency-container:not(:first-child) {
@@ -856,6 +885,7 @@ footer {
 
   #proficiency-table {
     font-size: 35px;
+    width: 100%;
   }
 
   .project-base {
@@ -877,6 +907,6 @@ footer {
   }
 
   #my-email {
-    font-size: 30px;
+    /*font-size: 30px;*/
   }
 }
