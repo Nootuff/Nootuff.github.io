@@ -10,11 +10,11 @@ window.addEventListener('resize', () => {
 });
 
 // Jquery script for the sticky navbar.
-$(document).ready(function() {
-  $(window).scroll(function () { 
-      var height = window.innerHeight ;
-      console.log($(window).scrollTop())
-    if ($(window).scrollTop() > height ) {
+$(document).ready(function () {
+  $(window).scroll(function () {
+    var height = window.innerHeight;
+    console.log($(window).scrollTop())
+    if ($(window).scrollTop() > height) {
       $('#navbar').addClass('navbar-fixed');
     }
     if ($(window).scrollTop() < height + 1) {
@@ -24,14 +24,14 @@ $(document).ready(function() {
 });
 
 // Function to apply animation classes to elements as they scroll into view.
-animator = (target, anim) => {
+const animator = (target, anim) => {
   observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.intersectionRatio > 0) {
         entry.target.classList.add(anim);
       }
       else {
-      entry.target.classList.add('none');
+        entry.target.classList.add('none');
       }
     })
   })
@@ -61,12 +61,13 @@ animator(swingUpTarget, "swing-up-anim");
 const scaleUpTarget = document.querySelectorAll("#scale-up-target");
 animator(scaleUpTarget, "scale-up-anim");
 
-emptyChecker = () => {
+
+const emptyChecker = () => {
   let name = document.getElementById("name").value;
-let comment = document.getElementById("comment").value;
-  
-  if (comment == "" || name == "" ) {
-      alert("Enter your name and a message");
-      return false;
+  let comment = document.getElementById("comment").value;
+  if (comment == "" || name == "") {
+    alert("Please enter your name and a message");
+    return false;
   };
 }
+
