@@ -57,17 +57,21 @@
 
     <h2 class="heading white-text slide-right slide-side-target fade-target">About</h2>
     <div id="about-container" class="white-text">
-      <div class="fade-target">
-        <p id="about-para">Starting in early 2019, I have been steadily improving my web development skills through a
+      <div id="about-intro" class="fade-target">
+        <div id="about-para">
+        <h3><span class="blue-text">Hi,</span> I'm Adam!</h3>
+        <p >Starting in early 2019, I have been steadily improving my web development skills through a
           number of online resources. I hope to one day become a professional web developer.</p>
-          <div style=" text-align: center;">
-        <!-- <a class="project-button github " href="https://github.com/Nootuff"
+          </div>
+          <div id="about-image"><img  src="./imgs/about_image.jpg"></div>
+         <!--  <div style=" text-align: center;">
+        <a class="project-button github " href="https://github.com/Nootuff"
             target="_blank">My Github</a>
             <a class="project-button github " href="https://www.linkedin.com/in/adamwalkeruk/"
-            target="_blank">My Linkedin</a> -->
-          </div>
-        <p id="proficiency-subheading" class="">Skills</p>
+            target="_blank">My Linkedin</a> 
+          </div>-->
       </div>
+      <p id="proficiency-subheading" class="fade-target">Skills</p>
       <div id="proficiency-table" class="fade-target">
         <div class="left column">
           <p class="proficiency-container"><span class="proficiency-icon"><i class="fab fa-html5"></i></span> <span class=" proficiency-text" >HTML</span></p>
@@ -82,10 +86,10 @@
         <div class="right column">
           
           <p class="proficiency-container"><span class="proficiency-icon"><i class="fab fa-github"></i></span> <span class="proficiency-text  " >Git & GitHub</span></p>
-          <p class="proficiency-container  "><span class="proficiency-icon"><i class="icon-mongodb"></i></span> <span class="proficiency-text  ">MongoDb</span></p>
-          <p class="proficiency-container  "><span class="proficiency-icon"><i class="icon-npm"></i></span> <span class="proficiency-text  ">Express & EJS</span></p>
-          <p class="proficiency-container "><span class="proficiency-icon"><span class="iconify" data-icon="simple-icons:mui"></span></span> <span class="proficiency-text  ">MUI</span></p>
-          <p class="proficiency-container "><span class="proficiency-icon"><i class="fab fa-bootstrap"></i></span> <span class="proficiency-text  ">Bootstrap 5</span></p>
+          <p class="proficiency-container"><span class="proficiency-icon"><i class="icon-mongodb"></i></span> <span class="proficiency-text  ">MongoDb</span></p>
+          <p class="proficiency-container"><span class="proficiency-icon"><i class="icon-npm"></i></span> <span class="proficiency-text  ">Express & EJS</span></p>
+          <p class="proficiency-container"><span class="proficiency-icon"><span class="iconify" data-icon="simple-icons:mui"></span></span> <span class="proficiency-text">MUI</span></p>
+          <p class="proficiency-container"><span class="proficiency-icon"><i class="fab fa-bootstrap"></i></span> <span class="proficiency-text">Bootstrap 5</span></p>
           <p class="proficiency-container"><span class="proficiency-icon"><i class="fab fa-sass"></i></span> <span class="proficiency-text  ">Sass</span></p>
         
         </div>
@@ -96,13 +100,13 @@
     <h2 class="heading white-text slide-left slide-side-target">Projects</h2>
 
     <div class="slide-up-target project-base white-text">
-      <a class="project-image top-image" href="https://www.dogbase.net/" target="_blank"><img
+      <!-- <a class="project-image top-image" href="https://www.dogbase.net/" target="_blank"><img
           src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/dogbase-image-2.png"
-          width="100%"></a>
-      <div>
-        <h1 class="project-title project-descriptor">dogBase</h1>
-        <h2 class="project-skills blue-text project-descriptor">NodeJs, Express, MongoDB, Javascript</h2>
-        <p class="project-blurb project-descriptor">A content-sharing -website similar to Reddit built using Node,
+          width="100%"></a>-->
+      <div class="project-descriptor">
+        <h1 class="project-title ">dogBase</h1>
+        <h2 class="project-skills blue-text ">NodeJs, Express, MongoDB, Javascript</h2>
+        <p class="project-blurb ">A content-sharing -website similar to Reddit built using Node,
           Express and MongoDB. Users are able to create accounts & upload, edit or delete content while interacting with
           other users uploads. Full cloud storage using MongoDB Atlas and Cloudinary. </p>
         <div class="button-container">
@@ -111,19 +115,19 @@
             target="_blank">Github</a>
         </div>
       </div>
-      <a class="project-image bottom-image" href="https://www.dogbase.net/" target="_blank"><img
-          src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/dogbase-image-2.png"
+      <a class="project-image " href="https://www.dogbase.net/" target="_blank"><img
+          src="./imgs/dogbase-imgs/dogbase-image-1.png"
           width="100%"></a>
     </div>
 
     <div class="slide-up-target project-base white-text">
-      <a class="project-image top-image " href="https://weightform.netlify.app/" target="_blank"><img
+      <!-- <a class="project-image top-image " href="https://weightform.netlify.app/" target="_blank"><img
           src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/weightForm-img-1.png"
-          width="100%"></a>
-      <div>
-        <h3 class="project-title project-descriptor">weightForm</h3>
-        <h2 class="project-skills blue-text project-descriptor">NodeJs, React, Axios, MUI</h2>
-        <p class="project-blurb project-descriptor">This app can convert any number up to 4999 to its Roman numeral
+          width="100%"></a> -->
+      <div class="project-descriptor">
+        <h3 class="project-title">weightForm</h3>
+        <h2 class="project-skills blue-text">NodeJs, React, Axios, MUI</h2>
+        <p class="project-blurb">This app can convert any number up to 4999 to its Roman numeral
           equivalent. It will also convert & display the component numbers to demonstrate the makeup of the overall
           figure.</p>
         <div class="button-container">
@@ -132,19 +136,19 @@
             target="_blank">Github</a>
         </div>
       </div>
-      <a class="project-image bottom-image " href="https://weightform.netlify.app/" target="_blank"><img
-          src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/weightForm-img-1.png"
+      <a class="project-image" href="https://weightform.netlify.app/" target="_blank"><img
+         src="./imgs/weightForm-imgs/weightForm-img-1.png"
           width="100%"></a>
     </div>
 
     <div class="slide-up-target project-base white-text">
-      <a class="project-image top-image" href="https://dothistasktracker.netlify.app/" target="_blank"><img
+      <!-- <a class="project-image top-image" href="https://dothistasktracker.netlify.app/" target="_blank"><img
           src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/doThis-img-1.png"
-          width="100%"></a>
-      <div>
-        <h3 class="project-title project-descriptor">doThis</h3>
-        <h2 class="project-skills blue-text project-descriptor">NodeJs, React, React-Bootstrap, Bootstrap 5</h2>
-        <p class="project-blurb project-descriptor">More than just a simple to-do list. doThis allows users to set
+          width="100%"></a> -->
+      <div class="project-descriptor">
+        <h3 class="project-title ">doThis</h3>
+        <h2 class="project-skills blue-text">NodeJs, React, React-Bootstrap, Bootstrap 5</h2>
+        <p class="project-blurb">More than just a simple to-do list. doThis allows users to set
           themselves tasks, group tasks into project directories, assign task priorities & active deadlines, add notes and
           restore deleted tasks. Data is stored in localHost & can be fully edited or deleted.</p>
         <div class="button-container">
@@ -152,19 +156,19 @@
           <a class="small-button filling-button" href="https://github.com/Nootuff/React-ToDo-App" target="_blank">Github</a>
         </div>
       </div>
-      <a class="project-image bottom-image" href="https://dothistasktracker.netlify.app/" target="_blank"><img
-          src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/doThis-img-1.png"
+      <a class="project-image" href="https://dothistasktracker.netlify.app/" target="_blank"><img
+          src="./imgs/doThis-imgs/doThis-img-1.png"
           width="100%"></a>
     </div>
 
     <div class="slide-up-target project-base white-text">
-      <a class="project-image top-image" href="https://codepen.io/nootuff/full/bGpzgvx" target="_blank"><img
+       <!-- <a class="project-image top-image" href="https://codepen.io/nootuff/full/bGpzgvx" target="_blank"><img
           src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/quote-generator-image-2.png"
-          width="100%"></a>
-      <div>
-        <h3 class="project-title project-descriptor">API Inspiring Quote Generator</h3>
-        <h2 class="project-skills blue-text project-descriptor">Javascript, jQuery, Axios</h2>
-        <p class="project-blurb project-descriptor">Makes use of the Axios API promise based HTTP client to pull and
+          width="100%"></a> -->
+      <div class="project-descriptor">
+        <h3 class="project-title">Inspiring Quote Generator</h3>
+        <h2 class="project-skills blue-text">Javascript, jQuery, Axios</h2>
+        <p class="project-blurb ">Makes use of the Axios API promise based HTTP client to pull and
           display random inspirational quotes with a random background. Additional styling using jQuery. The project
           also features twitter integration allowing the user to tweet the quote directly from the site.</p>
         <div class="button-container">
@@ -174,9 +178,9 @@
             target="_blank">Github</a>
         </div>
       </div>
-      <a class="project-image bottom-image" href="https://nootuff.github.io/inspiring-quote-generator/"
+      <a class="project-image" href="https://nootuff.github.io/inspiring-quote-generator/"
         target="_blank"><img
-          src="https://raw.githubusercontent.com/Nootuff/Storage/master/Portfolio_images/quote-generator-image-2.png"
+          src="./imgs/quote-generator-imgs/quote-generator-image-2.png"
           width="100%"></a>
     </div>
 
