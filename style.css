@@ -164,12 +164,6 @@ a {
 #sub-heading {
   margin-top: -25px;
 }
-/*
-
-#icons {
-  display: none;
-}
-*/
 
 @keyframes text-wipe {
   0% {
@@ -248,17 +242,15 @@ a {
   margin: auto;
   flex-direction: column-reverse;
   width: 95%;
-  /*border: 1px solid orange;*/
+
 }
 
 #about-para {
-  font-size: 20px;
-  padding-right: 50px;
-  /*border: 1px solid green;*/
+  font-size: 16px;
+  padding-right: 0px;
 }
 
 #about-image {
-  /* border: 1px solid var(--light-blue-color);*/
   height: 200px;
   text-align: center;
 }
@@ -273,43 +265,32 @@ a {
   font-size: 40px;
   text-decoration: underline;
   text-decoration-color: var(--blue-color);
-  /*margin-bottom: 10px;*/
 }
 
 #proficiency-table {
   text-align: center;
   animation-duration: 2s;
-  /*border: 1px solid purple;*/
   width: 80%;
-  margin: /*40px*/-10px auto ;
+  margin: -10px auto;
 }
 
 
 .left {
   margin-right: 55%;
   display: block;
-
- /* border: 1px green solid;*/
 }
 
 .right {
   display: block;
-  /*width: 100%; 
-  border: 1px green solid;*/
 }
 
 .proficiency-container {
-  /*width: 100%;
- border: 1px solid yellow; */
   padding-bottom: 5px;
-
 }
 
 .proficiency-text {
-
   display: block;
   text-align: right;
-  /*border: 1px solid red;*/
 }
 
 .proficiency-icon {
@@ -322,7 +303,6 @@ a {
   border-radius: 5px;
   margin-right: 12px;
   float: left;
-
 }
 
 .column p {
@@ -385,13 +365,7 @@ a {
 
 .project-base {
   display: grid;
-  /*display: flex;
-
-  flex-direction: column-reverse;*/
-
   grid-template-columns: 1fr 1fr;
-  /*grid-auto-flow: dense; */
-
   height: auto;
   width: 90%;
   margin: 49px auto 0px;
@@ -401,18 +375,10 @@ a {
   overflow: hidden;
   text-align: center;
   background-color: var(--dark-grey-color);
- /* border: 1px solid pink;*/
 }
 
 .project-descriptor {
-  /* width: 50%;
-  margin: auto;
-  
-   border: 1px solid oldlace;
-   */
   flex-basis: 100%;
-
-
 }
 
 .project-title {
@@ -420,7 +386,7 @@ a {
   font-size: 2em;
   color: var(--white-color);
   padding: 0 20px;
- /* border: 1px solid orange;*/
+  /* border: 1px solid orange;*/
 }
 
 .project-skills {
@@ -428,25 +394,17 @@ a {
   /*width: 90%;*/
   padding: 0 20px;
   text-align: center;
- /* border: 1px solid yellow;*/
+  /* border: 1px solid yellow;*/
 }
 
 .project-blurb {
   font-size: 14px;
   padding: 0 28px;
-  /*border: 1px solid peru; */
 }
 
 .project-image {
-  /*
-width: 50%; 
-border: 1px solid pink;
-  
-  flex-basis: 100%;
-  margin: 25px auto 0px;*/
   width: 85%;
   margin: 25px auto 0;
-
   grid-column-start: 1;
   grid-row-start: 1;
   transition: all 0.1s ease-out;
@@ -456,40 +414,9 @@ border: 1px solid pink;
   transform: scale(0.97);
 }
 
-/*
-.top-image {
-  display: block;
-}
-
-.bottom-image {
-  display: none;
-}*/
-
 .button-container {
-
   margin: 40px auto 60px;
-/*  border: 1px solid plum;*/
 }
-
-
-
-/*
-.visit {
-  background-image: linear-gradient(to bottom,
-      var(--white-color) 50%,
-      var(--blue-color) 50%);
-  margin-right: 4px
-}
-
-.github {
-  background-image: linear-gradient(to bottom,
-      var(--white-color) 50%,
-      var(--blue-color) 50%);
-  margin-left: 4px
-}
-*/
-
-
 
 .slide-up-target {
   opacity: 0;
@@ -521,24 +448,6 @@ border: 1px solid pink;
   border: 3px solid var(--dark-grey-color);
   font-size: 30px;
   padding: 2px;
-  /*
-color: var(--dark-grey-color);
-
-  background-size: 100% 200%;
-  background-image: linear-gradient(to bottom,
-      var(--white-color) 50%,
-      var(--blue-color) 50%);
-  transition: 0.5s ease-in-out;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  
- 
-}
-
-#link-container:hover {
-  background-position: 0% 100%;
-  color: var(--white-color);
-   */
 }
 
 #contact {
@@ -560,6 +469,7 @@ color: var(--dark-grey-color);
   transform: rotate(90deg);
   transform-origin: bottom left;
   opacity: 0;
+  font-size: 22px;
 }
 
 .swing-up-anim {
@@ -661,34 +571,6 @@ textarea {
 #submit-container {
   text-align: center;
 }
-
-/*
-#submit {
-
-  
-  background-size: 100% 200%;
-  border-radius: 0px;
-  cursor: pointer;
-  background-image: linear-gradient(to bottom,
-      var(--white-color) 50%,
-      var(--blue-color) 50%);
-  transition: 0.5s ease-in-out;
-  width: 60%;
-  height: 50px;
-  text-align: center;
-  margin: 0 auto;
-  color: var(--dark-grey-color);
-  font-size: 30px;
-  
-}
-*/
-
-/*
-#submit:hover {
-  background-position: 0% 100%;
-  color: var(--white-color);
-}
-*/
 
 .scale-up-anim {
   animation: scale-up 0.7s forwards;
@@ -831,10 +713,14 @@ footer {
     flex-direction: row;
   }
 
+  #about-para {
+    padding-right: 50px;
+  }
+
   #about-image {
     height: 300px;
   }
-  
+
   .left {
     margin-right: 55%;
     display: inline-block;
@@ -867,47 +753,11 @@ footer {
     padding-top: 9vw;
   }
 
-  /*
-  #icons {
-    display: block;
-  }
+  #about-para {
+    font-size: 20px;
+    text-align: left;
 
-  .icon-container {
-    margin: 3px;
-    border: 4px solid var(--white-color);
-    border-radius: 50%;
-    background-color: var(--white-color);
   }
-
-  #icons .icon-container {
-    display: inline-block;
-    transition: 0.7s ease-in-out;
-    -webkit-transition: 0.7s ease-in-out;
-    -moz-transition: 0.7s ease-in-out;
-    margin-bottom: 30px;
-  }
-
-  .linkIcon {
-    background-color: var(--white-color);
-    color: var(--dark-grey-color);
-    padding: 10px;
-    font-size: 1.8em;
-    border-radius: 50%;
-    transition: 0.7s ease-in-out;
-    -webkit-transition: 0.7s ease-in-out;
-    -moz-transition: 0.7s ease-in-out;
-  }
-
-  .linkIcon:hover {
-    transform: rotateY(360deg);
-    background-color: var(--blue-color);
-    color: var(--white-color);
-  }
-
-  .icon-container:hover {
-    background-color: var(--blue-color);
-  }
-  */
 
   .proficiency-icon {
     width: 35px;
@@ -926,20 +776,11 @@ footer {
     flex-direction: row;
     padding: 0;
     width: 85%;
-    /*border: 1px solid green;*/
   }
 
-
   .project-descriptor {
-    /* width: 50%;
-     margin: auto;
-     
-      border: 1px solid oldlace;
-      */
-
     width: 90%;
     margin: auto;
-
   }
 
   .project-title {
@@ -957,11 +798,13 @@ footer {
     margin: 0 auto 40px;
   }
 
-
-
   .heading {
     font-size: 60px;
     width: 70%;
+  }
+
+  #form-header {
+    font-size: 32px;
   }
 
   #my-email {
@@ -980,13 +823,6 @@ footer {
     font-size: 2.5em;
     padding: 12px;
   }
-
-  /*
-  .icon-container {
-    margin: 10px;
-    border: 5px solid var(--white-color);
-  }
-*/
 
   #about-container {
     width: 70%;
@@ -1018,9 +854,7 @@ footer {
 
   .project-image {
     grid-column-start: 2;
-    /*grid-row-start: 2; */
     margin: 0;
-
     width: 100%;
   }
 }
@@ -1029,14 +863,9 @@ footer {
   .left {
     margin-right: 55%;
     width: 25%;
-    /*display: inline-block;
-    width: 40%;*/
   }
 
   .right {
     width: 25%;
-   /* 
-    display: inline-block;
-     width: 40%;*/
   }
 }
