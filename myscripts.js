@@ -13,7 +13,7 @@ window.addEventListener('resize', () => {
 $(document).ready(function () {
   $(window).scroll(function () {
     var height = window.innerHeight;
-    console.log($(window).scrollTop())
+    //console.log($(window).scrollTop())
     if ($(window).scrollTop() > height) {
       $('#navbar').addClass('navbar-fixed');
     }
@@ -70,3 +70,7 @@ const emptyChecker = () => {
     return false;
   };
 }
+
+const currYear = () => { document.getElementById("date").innerText = /\d{4}/.exec(Date())[0]; };
+
+window.onload = function () { currYear(); };
